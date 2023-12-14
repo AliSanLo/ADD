@@ -4,9 +4,9 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/empresa3?zeroDateTimeBehavior=convertToNull</property>
-    <property name="hibernate.connection.username">user-2023</property>
-    <property name="hibernate.connection.password">user-2023-pass</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/empresa</property>
+    <property name="hibernate.connection.username">1234</property>
+    <property name="hibernate.connection.password">1234</property>
     <mapping resource="orm2023/Departamentos.hbm.xml"/>
     <mapping resource="orm2023/Empleados.hbm.xml"/>
   </session-factory>

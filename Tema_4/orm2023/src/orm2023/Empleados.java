@@ -11,7 +11,7 @@ public class Empleados  implements java.io.Serializable {
 
 
      private short empNo;
-     private Departamentos departamentos; //SUPER IMPORTANTE. Herencia?
+     private Departamentos departamentos;
      private String apellido;
      private String oficio;
      private Short dir;

@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/alici/Downloads/orm2023/src/orm2023/Departamentos.hbm.xml</file>
-            <file>file:/C:/Users/alici/Downloads/orm2023/src/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/alici/OneDrive/Escritorio/orm2023/src/orm2023/ClaseNoAsociadaOtrosResultados.java</file>
+            <file>file:/C:/Users/alici/OneDrive/Escritorio/orm2023/src/orm2023/ClaseUnicoResultad.java</file>
+            <file>file:/C:/Users/alici/OneDrive/Escritorio/orm2023/src/orm2023/Actualizacion.java</file>
+            <file>file:/C:/Users/alici/OneDrive/Escritorio/orm2023/src/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/alici/OneDrive/Escritorio/orm2023/src/orm2023/ClaseNoAsociada.java</file>
         </group>
     </open-files>
 </project-private>

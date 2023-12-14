@@ -33,6 +33,7 @@ public class Orm2023 {
          dep.setLoc("Sevilla");
          session.save(dep);
          */
+        
         System.out.println("Insertar un empleado");
         Empleados em = new Empleados();
         em.setEmpNo((short) 6677);
@@ -45,8 +46,7 @@ public class Orm2023 {
         Departamentos d = new Departamentos();
         d.setDeptNo((byte) 10);
         em.setDepartamentos(d);
-        
-//Guardado en la base de datos: Se intenta guardar el objeto em en la base de datos utilizando session.save(em).
+
         try {
             session.save(em);//Super importante
             try{
@@ -55,9 +55,6 @@ public class Orm2023 {
                 System.out.println("Empleado duplicado");
                 System.out.println("Error SQL: "+e.getSQL());
             }
-            /*Manejo de excepciones: Se manejan las excepciones TransientPropertyValueException y ConstraintViolationException. 
-            La primera se utiliza para detectar si el objeto Departamentos asociado al objeto Empleados no existe, mientras que la 
-                segunda se utiliza para manejar violaciones de restricciones, como la duplicación de un empleado.*/
         } catch (TransientPropertyValueException e) {
             System.out.println("Departamento no existe");
             System.out.println("Mensaje: " + e.getMessage());
