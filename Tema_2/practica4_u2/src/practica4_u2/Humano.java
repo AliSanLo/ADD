@@ -13,8 +13,8 @@ import java.io.Serializable;
  */
 public class Humano implements Serializable {
 
-    public static int edad = 24;
-    public static String nombre = "Ali";
+    private  int edad = 24;
+    private String nombre = "Ali";
     
 
     public Humano (String nombre, int edad){
