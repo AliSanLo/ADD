@@ -23,6 +23,8 @@ public class Principal {
         File f = new File("C:\\Users\\Alicia\\Documents\\NetBeansProjects\\practica4_u2\\humanos.dat");
         
         //FLUJO DE ENTRADA
+        
+        
         FileOutputStream entrada = new FileOutputStream(f);
         ObjectOutputStream entradaobjeto = new ObjectOutputStream(entrada);
         try {
