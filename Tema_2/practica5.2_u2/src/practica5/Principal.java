@@ -15,6 +15,7 @@ import java.io.RandomAccessFile;
  * @author Alicia
  */
 public class Principal {
+
     public static void main(String[] args) throws FileNotFoundException, IOException {
         File f = new File("C:\\Users\\Alicia\\Documents\\NetBeansProjects\\practica5_u2\\prueba.dat");
         RandomAccessFile file = new RandomAccessFile(f, "r");
@@ -34,8 +35,12 @@ public class Principal {
             depa = file.readInt();
             salarios = file.readDouble();
             System.out.println("Identificador: " + id + ", Apellido: " + apellidoX + ", Departamento: " + depa + ", Salario: " + salarios);
-
             posicion = posicion + 36;
+            // 36 indica el tamaño de bytes que añadimos, para e ncntrar el punto de partida.
+            //Si no sabemos los bytes podemos hacer lo siguiente: 
+            /*int sizeOfData = Integer.BYTES + 2 * Character.BYTES * 10 + Integer.BYTES + Double.BYTES;
+             posicion = posicion + sizeOfData;*/
+
             if (file.getFilePointer() == file.length()) {
                 break;
             }
@@ -45,4 +50,3 @@ public class Principal {
     }
 
 }
-
